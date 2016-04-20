@@ -18,3 +18,7 @@ this.Numbers.Value += Random.Range(10, 20);
 ## Motivation
 
 For more convenient unity development :)
+
+## License
+
+[MIT](https://github.com/takoji3/unity-scripts/blob/master/LICENSE)
