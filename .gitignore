@@ -2,7 +2,7 @@ Library/
 Temp/
 obj/
 
-Assets/VSCode/
+Assets/VSCode*
 
 *.csproj
 *.sln
