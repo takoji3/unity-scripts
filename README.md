@@ -15,6 +15,17 @@ Display value with sprite images.
 this.Numbers.Value += Random.Range(10, 20);
 ```
 
+### Shaker
+
+Shake the GameObject.
+
+![unityscript-sh.gif](https://qiita-image-store.s3.amazonaws.com/0/15618/2ee93c79-32e6-403c-c3cb-d6ce1942e060.gif "unityscript-sh.gif")
+
+```c#
+// Canonfigure on Editor.
+this.ShakeObject.Shake();
+```
+
 ## Motivation
 
 For more convenient unity development :)
