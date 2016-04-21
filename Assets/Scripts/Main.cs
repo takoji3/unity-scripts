@@ -3,19 +3,19 @@ using System.Collections;
 
 public class Main : MonoBehaviour
 {
-	public NumberSprites Numbers;
-	
+	[SerializeField]
+	NumberSprites Numbers;
+
+	[SerializeField]
+	Shaker Shaker;
+
 	// Use this for initialization
-	void Start ()
+	void Start()
 	{
 		StartCoroutine(Increase());
+		StartCoroutine(Shake());
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-	
+
 	IEnumerator Increase()
 	{
 		Numbers.Reset(0);
@@ -24,5 +24,11 @@ public class Main : MonoBehaviour
 			this.Numbers.Value += Random.Range(10, 20);
 			yield return new WaitForSeconds(2);
 		}
+	}
+
+	IEnumerator Shake()
+	{
+		yield return new WaitForSeconds(1f);
+		this.Shaker.Shake();
 	}
 }
