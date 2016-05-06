@@ -26,6 +26,19 @@ Shake the GameObject.
 this.ShakeObject.Shake();
 ```
 
+### Sound
+
+Dynamically load and play audio source sample.
+
+```c#
+// play by AudioSource#Play
+Sound.Instance.PlayBGM("sample-bgm");
+Sound.Instance.FadeOutBGM(5f, () => Debug.Log("Completely fade out"));
+
+// play by AudioSource#PlayOneShot
+Sound.Instance.PlaySE("sample-se");
+```
+
 ## Motivation
 
 For more convenient unity development :)

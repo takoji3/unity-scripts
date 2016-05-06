@@ -14,6 +14,11 @@ public class Main : MonoBehaviour
 	{
 		StartCoroutine(Increase());
 		StartCoroutine(Shake());
+
+		Sound.Instance.PlayBGM("sample-bgm");
+		Sound.Instance.FadeOutBGM(5f, () => Debug.Log("Completely fade out"));
+
+		Sound.Instance.PlaySE("sample-se");
 	}
 
 	IEnumerator Increase()
